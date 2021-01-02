@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="">
+	 <head>
+		  <meta charset="utf-8">
+		  <title>Inkscape - Draw Freely</title>
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <link rel="stylesheet" href="styles.css">
+	 </head>
+	 
+	 <body>
+		  <div class="main-container">
+				<nav>
+					 <ul>
+						  <li><a class="selected" href="#intro">Intro</a></li>
+						  <li><a href="#overview">Overview</a></li>
+						  <li><a href="#features">Features</a></li>
+						  <li><a href="#footer">Links</a></li>
+					 </ul>
+				</nav>
+		  
+				<header>
+					 <section id="intro">
+						  <h1>Inkscape</h1>
+						  <p>Inkscape is a free vector graphics editor similar to Adobe Illustrator, Corel Draw, or Affinity Designer. What sets Inkscape apart is its use of Scalable Vector Graphics (SVG) as the native format</p>
+					 </section>
+					 
+					 <section class="hero-image">
+						  <img src="inkscape-logo.svg">
+					 </section>
+				</header>
+		  
+				<section class="os-buttons">
+					 <button>Download for Linux</button>
+					 <button>Inkscape for other Systems</button>
+				</section>
+		  
+				<section id="overview">
+					 <section class="designers">
+						  <h3>For designers of all kind</h3>
+						  <p>If you are new to the process of creating vector graphics it may feel different, but you will quickly be pleased by the flexibility, and power Inkscape offers. The Inkscape application is used across a wide variety of industries (marketing/branding, engineering/CAD, web graphics, cartooning) and individual uses.</p>
+					 </section>
+					 
+					 <section class="publishing">
+						  <h3>Professional Publishing</h3>
+						  <p>All Inkscape projects may be exported in formats friendly to web browsers or commercial printer rooms. It is cross-platform, which means it is easy to run on Windows, Mac OS X, and Linux distributions. Visit the Download page to install or share this application now</p>
+					 </section>
+				</section>
+		  
+				<section id="features">
+					 <h2>Features of Inkscape</h2>
+					 
+					 <div class="features-columns-container">
+						  <section class="drawing-tools">
+						  <img src="drawing-tools.svg">
+						  <h3>Flexible drawing tools</h3>
+						  <ul>
+								<li>Drawing: pencil tool, pen tool, calligraphy tool</li>
+								<li>Shape tools: rectangles, stars/polygons, spiral</li>
+								<li>Embedded bitmaps (with a command to create and embed bitmaps of selected objects</li>
+								<li>Clones ("live" linked copies of objects), including a tool to create patterns and arrangements of clone</li>
+						  </ul>
+						  </section>
+						  
+						  <section class="file-formats">
+						  <img src="file-formats.svg">
+						  <h3>Broad file format compatibility</h3>
+						  <ul>
+								<li>Perfectly compliant SVG format file generation and editing</li>
+								<li>Live watching and editing the document tree in the XML edito</li>
+								<li>PNG, OpenDocument Drawing, DXF, sk1, PDF, EPS and PostScript export formats and mor</li>
+								<li>Clones ("live" linked copies of objects), including a tool to create patterns and arrangements of clone</li>
+						  </ul>
+						  </section>
+						  
+						  <section class="text-tool">
+						  <img src="text-tool.svg">
+						  <h3>Powerful text tool</h3>
+						  <ul>
+								<li>Multi-line text</li>
+								<li>Kerning, letterspacing, linespacing adjustment</li>
+								<li>Text on path (both text and path remain editable</li>
+								<li>Text in shape (fill shape following stroke)</li>
+						  </ul>
+						  </section>
+					 </div>
+				</section>
+		  
+				<footer id="footer">
+					 <section>
+						  <h3>Navigation</h3>
+						  <ul>
+						  <li><a href="#intro">Intro</a></li>
+						  <li><a href="#overview">Overview</a></li>
+						  <li><a href="#features">Features</a></li>
+						  <li><a href="#footer">Links</a></li>
+						  </ul>
+					 </section>
+					 
+					 <section>
+						  <h3>About</h3>
+						  <ul>
+						  <li><a href="https://inkscape.org/about/">About</a></li>
+						  <li><a href="https://inkscape.org/overview/">Overview</a></li>
+						  <li><a href="https://inkscape.org/features/">Features</a></li>
+						  <li><a href="https://inkscape.org/branding/">Branding</a></li>
+						  </ul>
+					 </section>
+					 
+					 <section>
+						  <h3>Learn</h3>
+						  <ul>
+						  <li><a href="https://inkscape.org/learn/">Learn</a></li>
+						  <li><a href="https://inkscape.org/learn/faq/">FAQ</a></li>
+						  <li><a href="https://inkscape.org/learn/books/">Books and Manuals</a></li>
+						  <li><a href="https://inkscape.org/learn/tutorials/">Tutorials</a></li>
+						  <li><a href="https://inkscape.org/learn/animation/">Animation</a></li>
+						  </ul>
+					 </section>
+					 
+					 <section>
+						  <h3>Download</h3>
+						  <ul>
+						  <li><a href="https://inkscape.org/release/">Current Version</a></li>
+						  <li><a href="https://inkscape.org/release/inkscape-master/?latest=1">Latest Development Version</a></li>
+						  <li><a href="https://inkscape.org/gallery/=extension/">Extensions</a></li>
+						  </ul>
+					 </section>
+				</footer>
+		  </div>
+	
+		  <script>
+				let lista = document.querySelectorAll('nav > ul > li > a');
+				
+				for (let i = 0; i < lista.length; i++) {
+				
+					 lista[i].addEventListener('click', function(e) {
+					 
+						  for (let i = 0; i < lista.length; i++) {
+								if (e.target.innerText === lista[i].innerText) {
+									 e.target.classList.add('selected');
+								} else {
+									 lista[i].classList.remove('selected');
+								}
+						  }
+					 });
+
+				}
+		  </script>
+	 </body>
+</html>
