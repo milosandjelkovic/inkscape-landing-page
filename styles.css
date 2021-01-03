@@ -280,6 +280,7 @@ footer ul li a:hover {
 @media (max-width: 800px){
 	nav ul {
 		flex-direction: column;
+		text-align: center;
 	}
 	
 	nav ul li {
@@ -288,6 +289,7 @@ footer ul li a:hover {
 	
 	header {
 		flex-direction: column;
+		text-align: center;
 	}
 	
 	button {
