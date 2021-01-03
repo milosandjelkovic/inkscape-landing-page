@@ -75,7 +75,7 @@ nav ul li a:active {
 
 header {
 	display: flex;
-	padding: 0 3.2rem;
+	padding: 6rem 3.2rem;
 	background: rgb(249,178,124);
 	background: linear-gradient(135deg, rgba(249,178,124,1) 0%, rgba(249,146,116,1) 30%, rgba(232,99,104,1) 70%, rgba(192,82,104,1) 100%);
 }
@@ -89,7 +89,6 @@ header #intro {
 }
 
 header h1 {
-	margin-top: 6rem;
 	font-size: 4.8rem;
 }
 
@@ -277,9 +276,9 @@ footer ul li a:hover {
 }
 
 @media (max-width: 800px){
-	 header {
-		  flex-direction: column;
-	 }
+	header {
+		flex-direction: column;
+	}
 	
 	button {
 		font-size: 1.4rem !important;
