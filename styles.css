@@ -284,6 +284,10 @@ footer ul li a:hover {
 		font-size: 1.4rem !important;
 	}
 	
+	#overview {
+		flex-direction: column;
+	}
+	
 	.features-columns-container {
 		flex-direction: column;
 	}
